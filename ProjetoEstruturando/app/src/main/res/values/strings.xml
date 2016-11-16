@@ -1,0 +1,174 @@
+<resources>
+
+    <string name="app_name">Estruturando</string>
+
+    <string name="titulo">Estruturas de Dados</string>
+
+    <string name="descricao">Aprenda em poucos passos como funcionam e os principais métodos das 5
+    principais estruturas de dados usando o Java como exemplo</string>
+
+    <string name="vetorTitulo">1. Vetores (Array)</string>
+
+    <string name="vetores1">
+    Vetores ou arrays são estruturas de dados lineares e estáticas, isto quer dizer que se trata de um conjunto
+    de variáveis do mesmo tipo, que possuem o mesmo identificador(nome) e são alocados sequencialmente na memória.
+    O tempo de acesso aos elementos de um vetor é muito rápido, sendo considerado constante: o acesso aos elementos
+    é feito pelo seu índice no vetor. Porém, a remoção de elementos pode ser trabalhosa se não for desejável que haja
+    espaços "vazios" no meio do vetor, pois nesse caso é necessário "arrastar" de uma posição todos os elementos
+    depois do elemento removido.</string>
+
+    <string name="vetores2">Agora vamos ver algumas operações como criar, adicionar, imprimir e remover utilizando alguns métodos da
+    linguagem Java como exemplo.</string>
+
+    <string name="vetor_criar_txt">Criando um Vetor</string>
+
+    <string name="vetor_criar">Cria um vetor de Strings de tamanho 5.</string>
+
+    <string name="vetor_adicionar_txt">Adicionando em um Vetor</string>
+
+    <string name="vetor_adicionar">Existem várias maneiras de se adicionar elementos num vetor, porém, de forma prática e simples,
+    estamos atribuindo para cada posição(índices), um valor.</string>
+
+    <string name="vetor_imprimir_txt">Imprimindo um Vetor</string>
+
+    <string name="vetor_imprimir">Para imprimir um vetor é necessário percorre-lo utilizando um laço for, o "length" diz respeito
+    ao tamanho total do vetor, garantindo que o mesmo seja percorrido por completo.</string>
+
+    <string name="vetor_remover_txt">Removendo em um Vetor</string>
+
+    <string name="vetor_remover">Existem diversas maneiras de se remover em um vetor, o exemplo acima percorre todo o vetor e compara
+    com o argumento que será passado na execução do método, caso o nome exista ele será removido, liberando um espaço. Se não, o método
+    dispara uma mensagem para o usuário informando que aquela pessoa não existe no vetor.</string>
+
+    <string name="listaTitulo">2. Listas</string>
+
+    <string name="lista1">Existem vários tipos de listas, as sequenciais, encadeadas, duplamente encadeadas e as circulares. Porém, iremos
+    abordar nesse conteúdo a lista sequencial por ser de mais fácil compreensão e entendimento, e servirá de base para as demais.</string>
+
+    <string name="lista2">Como o nome já diz, uma lista sequencial é uma estrutura de dados na qual elementos de um mesmo tipo de dado
+    estão organizados de maneira sequencial. Não necessariamente, estes elementos estão fisicamente em sequência, mas a ideia é que
+    exista uma ordem lógica entre eles.</string>
+
+    <string name="lista3">Uma de suas vantagens em relação as outras é o acesso rápido aos elementos, uma vez que os mesmos estão
+    indexados, e dessa forma podendo ter acesso direto através do seu índice. Em compensação, sua desvantagem é ser limitada já
+    seu tamanho é pré-determinado, podendo haver inclusive um desperdício de memória uma vez que a lista não esteja sendo usada por completo.</string>
+
+    <string name="lista_criar">Criando uma Lista</string>
+
+    <string name="lista_criar2">Diferente de um vetor comum, para criar uma lista sequencial é necessário que haja uma Classe do
+    tipo que você deseja, e dentro dessa classe você deve colocar todos os atributos desejáveis. Usaremos como exemplo uma classe do
+    tipo Pessoa, onde guardará todos os seus atributos como nome, idade, sexo, etc.</string>
+
+    <string name="lista_criar3">Cria a partir da classe Pessoa uma lista de capacidade 5, a variável n irá guardar o tamanho da lista e este
+    valor sempre será incrementado ao inserir, e decrementado ao remover.</string>
+
+    <string name="lista_adicionar">Adicionando em uma Lista</string>
+
+    <string name="lista_adicionar2">Para inserir um elemento, você deve passar como argumento quem você quer adicionar e em qual posição.
+    Também é importante fazer uma verificação antes para saber se a lista está cheia. Sempre que você quer inserir em uma lista sequencial,
+    você precisa obrigatoriamente deslocá-la para direita através da invocação desse método. Depois disso, basta inserir a pessoa na posição
+    desejada, incrementar o valor da variável n (guarda o tamanho da lista) e retornar ao usuário uma mensagem.</string>
+
+    <string name="lista_imprimir">Imprimindo uma Lista</string>
+
+    <string name="lista_imprimir2">Para imprimir basta percorre-la até o seu fim (variável n guarda o tamanho da lista), e imprimir o objeto
+    pessoas com o atributo desejado, como mostrado no exemplo (nome e telefone).</string>
+
+    <string name="lista_remover">Removendo em uma Lista</string>
+
+    <string name="lista_remover2">Passa a posição que deseja remover, verifica se está vazia, e dessa vez é chamado o método para deslocar
+    para esquerda. Depois basta decrementar o valor de n e retornar ao usuário uma mensagem.</string>
+    
+    <string name="pilhaTitulo">3. Pilhas</string>
+
+    <string name="pilha1">Existem dois tipos de pilhas, a sequencial e encadeada. Vamos trabalhar com alguns exemplos da pilha sequencial</string>
+
+    <string name="pilha2">Pilhas são estruturas de dados do tipo LIFO (last-in first-out), onde o último elemento a ser inserido, será o
+    primeiro a ser retirado. Assim, uma pilha permite acesso a apenas um item de dados, o último inserido (seu topo). Para processar o
+    penúltimo item inserido, deve-se primeiro remover o último.</string>
+
+    <string name="pilha_criar">Criando uma Pilha</string>
+
+    <string name="pilha_criar2">Cria uma pilha de capacidade 100, onde a variável topo guardará obviamente o seu topo, e obrigatoriamente
+    o topo sempre começará com uma valor negativo (-1).</string>
+
+    <string name="pilha_adicionar">Adicionando em uma Pilha</string>
+
+    <string name="pilha_adicionar2">Para inseri é preciso informar como argumento o valor desejado, depois verificar se está cheia, e de maneira
+    simples inserir o valor no seu topo incrementando-o primeiro. Essa é uma grande vantagem ou desvantagem de uma pilha (depende do que você
+    quer implementar), nela só insere no topo.</string>
+
+    <string name="pilha_imprimir">Imprimindo uma Pilha</string>
+
+    <string name="pilha_imprimir2">Percorre a pilha até atingir o seu topo, depois exibe na tela os valores.</string>
+
+    <string name="pilha_remover">Removendo em uma Pilha</string>
+
+    <string name="pilha_remover2">Verifica se está vazia, se não, basta decrementar o topo.</string>
+
+    <string name="filaTitulo">4. Filas</string>
+
+    <string name="fila1">Assim como nas listas e pilhas, as filas também podem ser do tipo sequencial ou encadeada. Os exemplos a seguir serão
+    referentes a uma fila sequencial.</string>
+
+    <string name="fila2">Filas são estruturas de dados do tipo FIFO (first-in first-out), onde o primeiro elemento a ser inserido, será o primeiro
+    a ser retirado, ou seja, adiciona-se itens no fim e remove-se do início.</string>
+
+    <string name="fila_criar">Criando uma Fila</string>
+
+    <string name="fila_criar2">Criar uma fila é bem parecido com o que vimos antes em listas e pilhas, porém uma fila precisa de uma variável
+    para guardar o início e o fim, além de uma variável para guardar o seu tamanho.</string>
+
+    <string name="fila_adicionar">Adicionando em uma Fila</string>
+
+    <string name="fila_adicionar2">Verifica se está cheia, se não, incrementa o tamanho e faz fim receber ele mesmo + 1 dividindo pelo resto
+    da divisão do tamanho total da fila. Por fim, a fila na posição fim recebe o dado passado com argumento.</string>
+
+    <string name="fila_imprimir">Imprimindo um Fila</string>
+
+    <string name="fila_imprimir2">Verifica se está vazia, se não, percorre a fila enquanto for diferente do fim + 1. A operação a seguir é
+    semelhante ao que fizemos para inserir, porém é feita com a variável de controle do laço for. Por fim basta imprimir a fila.</string>
+
+    <string name="fila_remover">Removendo em uma Fila</string>
+
+    <string name="fila_remover2">Verifica se está vazia, se não, cria uma variável dado que recebe o início da fila, após guardar o início
+    nessa variável, podemos faze-lo receber null. O tamanho é decrementado e é feita a mesma operação de inserir, porém com o início.</string>
+
+    <string name="arvoreTitulo">5. Árvores</string>
+
+    <string name="arvore1">As árvores em estruturas de dados são as mais diversas, existem árvores do tipo B, B+, AVL Ordenada, entre outras.
+    Sua implementação é um tanto trabalhosa e difícil em relação a algumas outras estruturas que vimos. Por esse motivo, a árvore que
+    vamos trabalhar é a Binária.</string>
+
+    <string name="arvore2">Uma árvore binária é uma estrutura de dados caracterizada por elementos que chamamos de Nó, a estrutura de uma
+    arvore binária possui um Nó raiz, um Nó esquerda, um Nó direita e uma variável dado do tipo que você quer inserir. Pode não ter elemento
+    algum (árvore vazia), ou ter um elemento distinto, denominado raiz, com dois ponteiros para duas estruturas diferentes, denominadas
+    sub-árvore esquerda (Nó esquerda) e sub-árvore direita (Nó direita).</string>
+
+    <string name="arvore_criar">Criando uma Árvore</string>
+
+    <string name="arvore_criar2">Classe NoArvore onde fica o dado, Nó esquerda e Nó direita.</string>
+
+    <string name="arvore_criar3">Classe principal da Árvore onde ficam todos os seus métodos, inclusive a raiz.</string>
+
+    <string name="arvore_adicionar">Inserindo em uma Árvore</string>
+
+    <string name="arvore_adicionar_descricao">Existem três formas de se inserir em uma árvore binária:</string>
+
+    <string name="arvore_adicionar2">Insere na Raiz.</string>
+
+    <string name="arvore_adicionar3">Insere na sub-árvore da direita.</string>
+
+    <string name="arvore_adicionar4">Insere na sub-árvore da esquerda.</string>
+
+    <string name="arvore_imprimir">Imprimindo uma Árvore.</string>
+
+    <string name="arvore_imprimir_descricao">Existem três formas de se imprimir uma árvore binária:</string>
+
+    <string name="arvore_imprimir2">Pré-ordem (dado, esquerda, direita).</string>
+
+    <string name="arvore_imprimir3">In-ordem (esquerda, dado, direita).</string>
+
+    <string name="arvore_imprimir4">Pós-ordem (esquerda, direita, dado).</string>
+
+</resources>
